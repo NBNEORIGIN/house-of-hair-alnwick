@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Exclusive offers and discounts at House of Hair Alnwick. Scan the QR code for special deals on haircuts, colours, and styling.">
+    <meta property="og:title" content="Special Offers | House of Hair Alnwick">
+    <meta property="og:description" content="Exclusive offers and discounts at House of Hair Alnwick.">
+    <meta property="og:type" content="website">
+    <title>Special Offers | House of Hair Alnwick</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        .offers-hero {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: linear-gradient(135deg, var(--black) 0%, var(--black-light) 100%);
+            padding: 40px 20px;
+            color: var(--cream);
+        }
+
+        .offers-hero .logo {
+            height: 80px;
+            filter: invert(1) brightness(2);
+            margin-bottom: 30px;
+        }
+
+        .offers-hero h1 {
+            font-size: clamp(2rem, 6vw, 3.5rem);
+            color: var(--cream);
+            margin-bottom: 10px;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+        }
+
+        .offers-hero .welcome-text {
+            font-size: 1.2rem;
+            color: var(--gold);
+            margin-bottom: 40px;
+            font-family: 'Cormorant Garamond', serif;
+            font-style: italic;
+        }
+
+        .offers-list {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            max-width: 500px;
+            width: 100%;
+            margin-bottom: 50px;
+        }
+
+        .offer-item {
+            background: linear-gradient(135deg, var(--gold) 0%, var(--gold-dark) 100%);
+            color: var(--black);
+            padding: 30px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .offer-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23000000' fill-opacity='0.05'%3E%3Cpath d='M20 20h20v20H20zM0 0h20v20H0z'/%3E%3C/g%3E%3C/svg%3E");
+        }
+
+        .offer-item > * {
+            position: relative;
+            z-index: 1;
+        }
+
+        .offer-item.secondary {
+            background: var(--cream);
+        }
+
+        .offer-item h3 {
+            font-size: 1.3rem;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .offer-item .discount {
+            font-size: 2.5rem;
+            font-weight: 600;
+            font-family: 'Cormorant Garamond', serif;
+            margin-bottom: 8px;
+        }
+
+        .offer-item p {
+            font-size: 0.95rem;
+            opacity: 0.9;
+        }
+
+        .offer-item .terms {
+            font-size: 0.75rem;
+            opacity: 0.7;
+            margin-top: 10px;
+        }
+
+        .cta-section {
+            text-align: center;
+        }
+
+        .cta-section p {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .cta-section .btn-primary {
+            background-color: var(--gold);
+            border-color: var(--gold);
+            color: var(--black);
+            font-size: 1rem;
+            padding: 18px 50px;
+        }
+
+        .cta-section .btn-primary:hover {
+            background-color: var(--cream);
+            border-color: var(--cream);
+        }
+
+        .back-link {
+            margin-top: 40px;
+        }
+
+        .back-link a {
+            color: var(--cream);
+            text-decoration: none;
+            font-size: 0.9rem;
+            opacity: 0.7;
+            transition: opacity 0.3s ease;
+        }
+
+        .back-link a:hover {
+            opacity: 1;
+        }
+
+        .opening-banner {
+            background-color: var(--gold);
+            color: var(--black);
+            text-align: center;
+            padding: 12px 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        @media (max-width: 480px) {
+            .offers-hero .logo {
+                height: 60px;
+            }
+
+            .offer-item {
+                padding: 25px 20px;
+            }
+
+            .offer-item .discount {
+                font-size: 2rem;
+            }
+
+            .cta-section .btn-primary {
+                padding: 16px 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="opening-banner">
+        🎉 Now Open in Alnwick! 🎉
+    </div>
+
+    <main class="offers-hero">
+        <img src="assets/logo.svg" alt="House of Hair Alnwick" class="logo">
+        
+        <h1>Exclusive Offers</h1>
+        <p class="welcome-text">Thank you for scanning! Here are your special deals...</p>
+
+        <div class="offers-list">
+            <div class="offer-item">
+                <h3>Grand Opening Special</h3>
+                <div class="discount">20% OFF</div>
+                <p>Your first appointment with us</p>
+                <p class="terms">Valid on all services. Mention this offer when booking.</p>
+            </div>
+
+            <div class="offer-item secondary">
+                <h3>Refer a Friend</h3>
+                <div class="discount">£10 OFF Each</div>
+                <p>You and your friend both save when they book</p>
+                <p class="terms">Friend must be a new customer.</p>
+            </div>
+
+            <div class="offer-item">
+                <h3>Loyalty Reward</h3>
+                <div class="discount">5th Visit Free</div>
+                <p>Book 4 appointments, get your 5th blow dry on us</p>
+                <p class="terms">Ask about our loyalty card in salon.</p>
+            </div>
+        </div>
+
+        <div class="cta-section">
+            <p>Ready to book your appointment?</p>
+            <a href="https://www.fresha.com/a/house-of-hair-alnwick-alnwick-67-bondgate-within-tm1wgdh6" class="btn btn-primary" target="_blank" rel="noopener">Book Now on Fresha</a>
+        </div>
+
+        <div class="back-link">
+            <a href="index.html">← Visit our main website</a>
+        </div>
+    </main>
+</body>
+</html>
