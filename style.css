@@ -227,7 +227,9 @@ h1, h2, h3, h4 {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: linear-gradient(135deg, var(--cream) 0%, var(--cream-dark) 100%);
+    background: 
+        linear-gradient(135deg, rgba(253, 248, 243, 0.92) 0%, rgba(245, 237, 228, 0.92) 100%),
+        url('assets/Cutting Hair.jpeg') center center / cover no-repeat;
     padding: 160px 20px 80px;
     position: relative;
 }
