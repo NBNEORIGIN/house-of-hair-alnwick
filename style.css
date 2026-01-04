@@ -13,15 +13,31 @@
 .announcement-bar {
     background: linear-gradient(135deg, var(--gold) 0%, var(--gold-dark) 100%);
     color: var(--black);
-    text-align: center;
-    padding: 12px 20px;
+    padding: 12px 0;
     font-size: 0.9rem;
     font-weight: 500;
     letter-spacing: 0.5px;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
-.announcement-bar strong {
-    font-weight: 700;
+.announcement-scroll {
+    display: inline-block;
+    animation: scroll-left 20s linear infinite;
+}
+
+.announcement-scroll span {
+    display: inline-block;
+    padding-left: 100%;
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
 }
 
 * {
